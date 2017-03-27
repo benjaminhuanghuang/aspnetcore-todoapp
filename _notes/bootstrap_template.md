@@ -6,4 +6,4 @@ download template zip package from
 
 unzip css, fonts, js in the package to wwwroot/
 
-copy the content of index.html to views/home/index.cshtml
+copy the content of index.html to views/home/index.cs html
