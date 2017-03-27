@@ -1,0 +1,22 @@
+﻿
+<h1>@ViewBag.Title</h1>
+
+<div id="ToDoList">
+    <img src="~/imgs/Normal.png" title="Priority" /><span class="ToDoItem">To Do Item goes here...</span><img src="~/imgs/complete.png" title="Mark Completed" /> <img src="~/imgs/delete.png" title="Delete" /> <br />
+</div>
+
+<hr /><br />
+
+<h4>Enter new to-do item below. * All fields are required </h4>
+<div id="ToDoForm">
+    <label>To Do Item:</label>
+    <input type="text" maxlength="250" /> <br />
+    <label>Priority:</label>
+    <select>
+        <option value="Normal">Normal</option>
+        <option value="Important">Important</option>
+        <option value="Critical">Critical</option>
+    </select> <br /> <br />
+    <input type="submit" value="Submit" />
+</div>
+

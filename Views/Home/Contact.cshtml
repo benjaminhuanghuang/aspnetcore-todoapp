@@ -1,0 +1,20 @@
+﻿
+@model ToDoApp.ViewModels.ContactVM
+
+<h1>@ViewBag.Title</h1>
+
+<form asp-action="Contact" >
+    @if(ViewBag.Notify!=null)
+    {
+    <span class="notify">@ViewBag.Notify</span>
+    }
+    <div asp-validation-summary="ValidationSummary.All" class="error"></div>
+    <label asp-for="FullName">Full Name:</label><br />
+    <input asp-for="FullName"/> <span asp-validation-for="FullName" class="error"></span> <br />
+    <label asp-for="Email">Email:</label><br />
+    <input asp-for="Email" /> <span asp-validation-for="Email" class="error"></span> <br />
+    <label asp-for="Message">Message:</label><br />
+    <textarea cols="50" rows="5"  asp-for="Message"></textarea> <span asp-validation-for="Message" class="error"></span> <br />
+    <input type="submit" value="Send" />
+</form>
+
